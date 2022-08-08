@@ -1,4 +1,17 @@
 class DogsController < ApplicationController
+
+  def destroy
+    dog = Dog.find_by(id: params[:id])
+    if current_user.id == dog.user_id
+      dog.destroy
+      render json: {message: "dog destroyed"}
+    else
+      render json: {message: "that is not your dog to destroy"}
+    end
+  end
+
+
+
   
   def create
     if current_user

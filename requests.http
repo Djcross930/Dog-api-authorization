@@ -14,7 +14,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "jim@jim.com",
+  "email": "bob@bob.com",
   "password": "password"
 }
 ###
@@ -28,3 +28,8 @@ Content-Type: application/json
   "age": 5,
   "breed": "menace"
 }
+
+###
+
+DELETE http://localhost:3000/dogs/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjAwNjg3MzF9.N3Wj_TWdGrIYVgKkheYda0Up4HN_yXBIBsLb1_kPLdY
