@@ -1,5 +1,5 @@
 class DogsController < ApplicationController
-  
+  belongs_to :user
   def create
     if current_user
       dog = Dog.new
