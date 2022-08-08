@@ -17,3 +17,14 @@ Content-Type: application/json
   "email": "jim@jim.com",
   "password": "password"
 }
+###
+
+POST http://localhost:3000/dogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjAwNjc0Njd9.gwvS9xonrpeOv4r1oXpraH3g7hdeluNZloCzeSe6HRI
+Content-Type: application/json
+
+{
+  "name": "fluffy",
+  "age": 5,
+  "breed": "cute"
+}
