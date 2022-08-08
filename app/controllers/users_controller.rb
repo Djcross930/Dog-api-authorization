@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  has_many :dogs
+
   def create
     user = User.new(
       name: params[:name],
